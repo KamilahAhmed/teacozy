@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body{
+    font-family: Helvetica;
+    font-size: 1.375rem;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    height: 4.3125rem;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    z-index: 5;
+    background-color: black;
+}
+
+header img{
+    height: 3.125rem;
+    padding-left: 0.625rem;
+}
+
+nav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0.5rem;
+    list-style: none;
+    font-size: 1.3125rem;
+}
+
+nav li a {
+    color: seashell;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.mission{
+    border: 1px solid seashell;
+    height: 43.75rem;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 69px;
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mission-text{
+    background-color: black;
+    margin: auto;
+    padding: 0 1rem;
+    width: 100%;
+    line-height: 1.7;
+}
+
+.mission-text h2 {
+    font-size: 2.5rem;
+}
+
+.mission-text h4 {
+    font-size: 1.5rem;
+}
+
+.tea-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5rem;
+    padding-top: 3rem;
+    z-index: 1;
+    height: 43.75rem;
+    width: 85%;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.tea-container h2 {
+    font-size: 2rem;
+}
+
+.tea-container h4 {
+    font-size: 1.2rem;
+}
+
+.img-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tea-img {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+
+.locatebox {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 1100px;
+    margin: 2rem auto;
+}
+
+.locatebox h2 { 
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.location-child {
+    background-color: black;
+    width: 18.75rem;
+    height: auto;
+    margin: 1rem 1.25rem;
+    line-height: 3;
+    align-items: center;
+}
+
+.smallscreen {
+    display: none;
+}
+
+.contact {
+    width: 100%;
+    height: 12.5rem;
+    position: relative;
+    top: 0.625rem;
+}
+
+.contact h2{
+    padding: 0.625rem;
+    font-size: 2rem;
+}
+
+.contact h5{
+    padding: 20px;
+}
+
+footer{
+    display: block;
+    padding-left: 1.25rem;
+    text-align: left;
+    margin: 1.2rem auto;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 1600px) {
+    .tea-container {
+        width: 95%;
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #fallberry {
+        display: none;
+    }
+
+    .locatebox {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 705px) {
+    .mission-text h2 {
+        font-size: 2rem;
+    }
+    
+    .mission-text h4 {
+        font-size: 1.25rem;
+    }
+
+    .tea-container {
+        height: 58rem;
+    }
+
+    #myrtle, .bigscreen {
+        display: none;
+    }
+
+    .smallscreen, .location-container {
+        display: block;
+    }
+
+    .location-child {
+        width: 90%;
+        height: auto;
+        margin: 1.2rem auto;
+        padding: 1rem;
+        line-height: 2;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mobile{
+        display: none;
+    }
+}
